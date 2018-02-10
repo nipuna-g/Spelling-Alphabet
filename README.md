@@ -1,6 +1,8 @@
-# \<nato-spelling-alphabet\>
+# Nato Spelling Alphabet
 
+A simple Progressive Web Application that allows you to translate the characters in a string in to the [NATO phonetic alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
 
+# Setting up Dev environment
 
 ## Install the Polymer-CLI
 
