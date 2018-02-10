@@ -33,3 +33,7 @@ $ polymer test
 ```
 
 Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+
+# Deploying to gh-pages
+
+`$ git subtree push --prefix build/gh-pages/ origin gh-pages`

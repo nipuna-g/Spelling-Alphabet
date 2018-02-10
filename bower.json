@@ -4,7 +4,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
     "sw-toolbox": "^3.6.1",
-    "iron-input": "PolymerElements/iron-input#^2.0.1"
+    "iron-input": "PolymerElements/iron-input#^2.0.1",
+    "paper-input": "PolymerElements/paper-input#^2.1.1"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",

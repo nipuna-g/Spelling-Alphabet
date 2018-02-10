@@ -1,5 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
-<link rel="import" href="../../bower_components/iron-input/iron-input.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
+
 <link rel="import" href="./nato-text-translate.html">
 
 <dom-module id="nato-spelling-alphabet-app">
@@ -7,13 +8,27 @@
         <style>
             :host {
                 display: block;
+                font-family: Roboto, Noto, sans-serif;
+            }
+
+            h1, h2 { 
+                padding: 0;
+                margin: 0;
+                font-weight: normal;
+            }
+
+            h1 { font-weight: normal }
+            h2 {
+                font-weight: lighter;
             }
         </style>
-        <nato-text-translate text-input="[[prop1]]"></nato-text-translate>
-
-        <iron-input bind-value="{{prop1}}">
-            <input>
-        </iron-input>
+        <h1>Spelling Alphabet</h1>
+        <h2>(NATO Phonetic Alphabet)</h2>
+        <paper-textarea
+            label="Text Input"
+            value="{{textInput}}"
+            autofocus="true"></paper-textarea>
+        <nato-text-translate text-input="[[textInput]]"></nato-text-translate>
     </template>
 
     <script>
@@ -27,9 +42,9 @@
             }
             static get properties() {
                 return {
-                    prop1: {
+                    textInput: {
                         type: String,
-                        value: 'nato-spelling-alphabet-app'
+                        value: ''
                     }
                 };
             }
