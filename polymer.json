@@ -13,6 +13,7 @@
     },
     "js": {"minify": true},
     "css": {"minify": true},
-    "html": {"minify": true}
+    "html": {"minify": true},
+    "addServiceWorker": true
   }]
 }

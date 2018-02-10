@@ -24,7 +24,8 @@
       },
       "html": {
         "minify": true
-      }
+      },
+      "addServiceWorker": true
     }
   ],
   "lint": {
