@@ -1,5 +1,7 @@
 # Nato Spelling Alphabet
 
+*[Live Demo](https://nipuna777.github.io/Spelling-Alphabet/)*
+
 A simple Progressive Web Application that allows you to translate the characters in a string in to the [NATO phonetic alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
 
 # Development Instructions
