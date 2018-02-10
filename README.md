@@ -14,7 +14,7 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 $ polymer serve
 ```
 
-Navigate to `http://localhost:8000/` in order to view the page
+Navigate to `http://localhost:8000/` in order to view the page.
 
 ## Building Your Application
 
