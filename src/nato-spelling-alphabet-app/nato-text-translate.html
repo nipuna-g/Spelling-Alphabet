@@ -1,0 +1,90 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="nato-text-translate">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <h2>Input [[textInput]]</h2>
+        <h2>Output [[translatedOutput]]</h2>
+    </template>
+
+    <script>
+        /**
+         * @customElement
+         * @polymer
+         */
+        const natoDictionary = {
+            "A": "Alfa",
+            "B": "Bravo",
+            "C": "Charlie",
+            "D": "Delta",
+            "E": "Echo",
+            "F": "Foxtrot",
+            "G": "Golf",
+            "H": "Hotel",
+            "I": "India",
+            "J": "Juliett",
+            "K": "Kilo",
+            "L": "Lima",
+            "M": "Mike",
+            "N": "November",
+            "O": "Oscar",
+            "P": "Papa",
+            "Q": "Quebec",
+            "R": "Romeo",
+            "S": "Sierra",
+            "T": "Tango",
+            "U": "Uniform",
+            "V": "Victor",
+            "W": "Whiskey",
+            "X": "Xray",
+            "Y": "Yankee",
+            "Z": "Zulu",
+            " ": "[space]",
+            "1": "One",
+            "2": "Two",
+            "3": "Three",
+            "4": "Four",
+            "5": "Five",
+            "6": "Six",
+            "7": "Seven",
+            "8": "Eight",
+            "9": "Nine",
+            "0": "Zero",
+        }
+
+        class NatoTextTranslate extends Polymer.Element {
+            static get is() {
+                return 'nato-text-translate';
+            }
+            static get properties() {
+                return {
+                    textInput: {
+                        type: String,
+                        value: ''
+                    },
+                    translatedOutput: {
+                        type: String,
+                        computed: 'getPhoneticText(textInput)'
+                    }
+                };
+            }
+
+            getPhoneticText(textInput) {
+                let filteredTextInput = textInput.replace(/[^a-zA-Z0-9 ]/g, "");
+
+                let result = '';
+                for(let char of filteredTextInput) {
+                    result += natoDictionary[char.toUpperCase()] + ' ';
+                }
+                
+                return result;
+            }
+        }
+
+        window.customElements.define(NatoTextTranslate.is, NatoTextTranslate);
+    </script>
+</dom-module>

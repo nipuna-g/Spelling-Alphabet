@@ -1,32 +1,40 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/iron-input/iron-input.html">
+<link rel="import" href="./nato-text-translate.html">
 
 <dom-module id="nato-spelling-alphabet-app">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]!</h2>
-  </template>
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <nato-text-translate text-input="[[prop1]]"></nato-text-translate>
 
-  <script>
-    /**
-     * @customElement
-     * @polymer
-     */
-    class NatoSpellingAlphabetApp extends Polymer.Element {
-      static get is() { return 'nato-spelling-alphabet-app'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'nato-spelling-alphabet-app'
-          }
-        };
-      }
-    }
+        <iron-input bind-value="{{prop1}}">
+            <input>
+        </iron-input>
+    </template>
 
-    window.customElements.define(NatoSpellingAlphabetApp.is, NatoSpellingAlphabetApp);
-  </script>
+    <script>
+        /**
+         * @customElement
+         * @polymer
+         */
+        class NatoSpellingAlphabetApp extends Polymer.Element {
+            static get is() {
+                return 'nato-spelling-alphabet-app';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'nato-spelling-alphabet-app'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(NatoSpellingAlphabetApp.is, NatoSpellingAlphabetApp);
+    </script>
 </dom-module>
