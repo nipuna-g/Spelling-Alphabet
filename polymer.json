@@ -3,5 +3,16 @@
     "rules": [
       "polymer-2"
     ]
-  }
+  },
+  "builds": [{
+    "name": "gh-pages",
+    "bundle": {
+      "stripComments": true,
+      "inlineCss": false,
+      "sourcemaps": false
+    },
+    "js": {"minify": true},
+    "css": {"minify": true},
+    "html": {"minify": true}
+  }]
 }
