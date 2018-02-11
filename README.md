@@ -2,7 +2,11 @@
 
 *[Live Demo](https://nipuna777.github.io/Spelling-Alphabet/)*
 
-A simple Progressive Web Application that allows you to translate the characters in a string in to the [NATO phonetic alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet)
+![demo gif](http://gifly.com//media_gifly/b/z/s/n/b/bzsn.gif)
+
+A simple Progressive Web Application that allows you to translate the characters in a string in to the [NATO phonetic alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet).
+
+Ever wanted to spell out a word like they do in the military movies? Now you can with this tiny web app that works offline! Made with Polymer 2.0.
 
 # Development Instructions
 
